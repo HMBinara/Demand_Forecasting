@@ -1,47 +1,60 @@
 Markdown
-# 📊 AI-Powered Demand Forecasting System
+# 📊 Smart Demand Forecasting System (XGBoost)
 
-A professional full-stack Data Science application that predicts future product demand using **XGBoost Regression**. This tool helps businesses optimize inventory levels and pricing strategies.
+A professional AI-driven dashboard designed to forecast product demand based on pricing, promotions, and market trends. This tool helps businesses optimize inventory levels and supply chain management using Machine Learning.
 
-## 🚀 Key Features
-- **Predictive Modeling:** Uses XGBoost for high-accuracy forecasting.
-- **Dynamic UI:** Built with Streamlit with custom CSS styling.
-- **Categorical Handling:** Integrated Label Encoders for multi-category support.
-- **Market Analysis:** Factors in competitor pricing and promotional influence.
+## 🚀 Live Demo
+You can access the live application here: 
+👉 [Demand Forecasting App](https://demandforecasting-wvqqt9wwuta2b8btrzbbwq.streamlit.app/)
 
 ## 🛠️ Tech Stack
 - **Language:** Python 3.12
-- **Framework:** Streamlit
-- **ML Library:** XGBoost, Scikit-Learn
+- **Framework:** Streamlit (Custom CSS for professional UI)
+- **ML Library:** XGBoost Regression, Scikit-Learn
 - **Data Handling:** Pandas, NumPy
-- **Environment:** Virtual Environment (venv)
+- **Deployment:** Streamlit Cloud
 
 ## 📁 Project Structure
 ```text
 Demand_Forecasting/
-├── models/
+├── models/                  # Trained models & encoders (All Small Letters)
 │   ├── xgboost_demand_model.pkl
 │   └── label_encoders.pkl
-├── notebooks/
-│   └── training.ipynb
-├── app.py
-├── requirements.txt
-└── .gitignore
+├── notebooks/               # Training scripts & Data analysis
+│   └── Demand_Forecasting.ipynb
+├── app.py                   # Main Streamlit Application
+├── requirements.txt         # Project dependencies
+├── README.md                # Project documentation
+└── .gitignore               # Ignored files (venv, pycache)
 ⚙️ Installation & Setup
-Clone the repo:
+To run this project locally, follow these steps:
+
+Clone the repository:
 
 Bash
-git clone <your-repo-link>
-Create Virtual Environment:
+git clone [https://github.com/HMBinara/Demand_Forecasting.git](https://github.com/HMBinara/Demand_Forecasting.git)
+cd Demand_Forecasting
+Create a Virtual Environment:
 
 Bash
 python -m venv venv
+# Activate on Windows:
 .\venv\Scripts\activate
 Install Dependencies:
 
 Bash
 pip install -r requirements.txt
-Run Application:
+Run the Application:
 
 Bash
 streamlit run app.py
+💡 Key Features
+Accurate Predictions: Uses the XGBoost algorithm for high-performance regression.
+
+Dynamic Inputs: Users can manually type inventory levels and product prices.
+
+Competitor Analysis: Real-time comparison with competitor pricing to adjust demand.
+
+Categorical Support: Integrated Label Encoders for various product categories like Electronics, Clothing, and Groceries.
+
+Developer: HM Binara
