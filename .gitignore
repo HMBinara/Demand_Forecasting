@@ -1,0 +1,27 @@
+# Virtual Environment
+venv/
+ENV/
+env/
+.env
+
+# Python Bytecode (අනවශ්‍ය temporary files)
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Streamlit logs and configuration
+.streamlit/
+! .streamlit/config.toml
+! .streamlit/credentials.toml
+
+# OS related files
+.DS_Store
+Thumbs.db
+
+# Data files (Loku CSV files thiyanawa nam meka use karanna)
+# *.csv
+# *.xlsx
+
+# Machine Learning Models (Export karapu models)
+*.pkl
+*.joblib
