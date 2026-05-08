@@ -23,5 +23,4 @@ Thumbs.db
 # *.xlsx
 
 # Machine Learning Models (Export karapu models)
-*.pkl
 *.joblib
