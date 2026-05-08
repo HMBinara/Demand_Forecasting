@@ -43,8 +43,8 @@ st.markdown("""
 
 @st.cache_resource
 def load_artifacts():
-    model_path = "Models/xgboost_demand_model.pkl"
-    encoder_path = "Models/label_encoders.pkl"
+    model_path = "models/xgboost_demand_model.pkl"
+    encoder_path = "models/label_encoders.pkl"
     if os.path.exists(model_path) and os.path.exists(encoder_path):
         try:
             with open(model_path, "rb") as f:
